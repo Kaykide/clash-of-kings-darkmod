@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- My Styles -->
+    <link rel="stylesheet" href="/css/mainconsole.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="navbar-logo">DarkMod</a>
+        <div class="navbar-nav">
+          <a href="index.html">Home</a>
+          <a href="packages.html">Packages</a>
+          <a href="mainconsole.html">Console</a>
+          <a href="group.html">Group</a>
+        </div>
+
+        <div class="navbar-extra">
+          <a href="https://youtube.com/@warofthrones7564"
+            ><i class="fa-brands fa-youtube"></i> <span>YouTube</span></a
+          >
+          <a href="#" id="hamburger-menu"><i class="fa-solid fa-bars"></i></a>
+        </div>
+      </nav>
+      <!-- <div class="header">
+        <nav>
+          <div id="hamburger-menu">
+            <span><i class="fa-solid fa-bars"></i></span>
+          </div>
+          <div class="left-logo">
+            <a href="#">Dark Mod</a>
+          </div>
+          <ul>
+            <li><a href="/landingpage/landingpage.html">Home</a></li>
+            <li><a href="/packages/packages.html">Packages</a></li>
+            <li>
+              <a class="console-page" href="/mainconsole/mainconsole.html"
+                >Console</a
+              >
+            </li>
+            <li><a href="/group/group.html">Group</a></li>
+            <li>
+              <a target="_blank" href="https://youtube.com/@warofthrones7564"
+                >Youtube</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div> -->
+
+      <div class="main-content">
+        <div class="entrance">
+          <h1>
+            Welcome To <a href=""><span>Dark Mod</span></a> <br />Public Console
+          </h1>
+          <p>
+            We have shared our console with the public, please log in using the
+            public account that has been given in
+            <a href="#" style="color: azure">WhatsApp Group</a> or in the Game
+          </p>
+        </div>
+
+        <form id="login-form" method="post" onsubmit="return validate()">
+          <div class="login-title">
+            <h1>Sign In</h1>
+          </div>
+          <input
+            autocomplete="off"
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Username"
+            required
+            minlength="3"
+            maxlength="10"
+          />
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+          <button type="submit" value="login">Sign In</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="/javascript/mainconsole.js"></script>
+  </body>
+</html>
